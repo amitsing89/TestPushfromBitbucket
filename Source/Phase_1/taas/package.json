@@ -13,7 +13,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
-    "mongoose":"~4.7.2",
+    "mongoose":"~5.9.25",
     "jwt-simple":"~0.5.1",
     "rand-token":"~0.3.0",
     "crypto":"~0.0.3",
