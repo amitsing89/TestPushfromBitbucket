@@ -1,0 +1,20 @@
+Commands to start the DPE service code:
+
+1. Start kafka server
+>>$KAFKA_HOME/bin/kafka-server-start.sh  config/server.properties
+
+#for testing 
+2. Start the kafka consumer
+>>bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic my-topic from-beginning
+
+3. Start the redis server to read the metadata
+>>cd $REDIS_HOME/src 
+>>nohup ./redis-server  & 
+
+4. Then trigger DPE Producer to push messages to kafka
+>>cd DPEService
+>>python DPEProducer.py test.csv qwerty
+
+5. Start the DPEConsumer which is a spark job to process each kafka record and send to taas service for tokenization.
+>>cd DPEService
+>>pyspark /home/cloudera/Desktop/DPEService/DPEConsumer.py 

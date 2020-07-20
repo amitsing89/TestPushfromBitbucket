@@ -1,0 +1,172 @@
+
+/* 
+    Created on : Apr 2, 2017, 1:28:18 AM
+    Author     : prakasamm
+*/
+@import "_constructor.scss";
+
+.panel {
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 0px solid transparent;
+
+
+    .panel-heading {
+        position: relative;
+        padding: 17px 15px;
+        border-bottom: 1px solid transparent;
+
+        .panel-title { 
+            font-weight: 600; 
+            text-transform: uppercase;
+        }
+    }
+    
+    .panel-footer {
+        padding: 10px 15px;
+        background-color: #ffffff;
+        border-top: 1px solid #ddd;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+}
+
+
+.panel-default {
+    
+    >.panel-heading {
+        color: $color-text-drk;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+    }
+    
+    >.panel-body{
+        padding-top: 0;
+    }
+
+}
+
+
+.panel-primary>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-primary-dft;
+    border-color: $color-primary-dft;
+}
+
+.panel-secondary>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-secondary-dft;
+    border-color: $color-secondary-dft;
+}
+
+.panel-success>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-success-dft;
+    border-color: $color-success-dft;
+}
+
+.panel-info>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-info-dft;
+    border-color: $color-info-dft;
+}
+
+.panel-warning>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-warning-dft;
+    border-color: $color-warning-dft;
+}
+
+.panel-danger>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-danger-dft;
+    border-color: $color-danger-dft;
+}
+
+.panel-inverse>.panel-heading {
+    color: #FFFFFF;
+    background-color: $color-inverse-dft;
+    border-color: $color-inverse-dft;
+}
+
+/*PANEL TOOLS*/
+.panel .panel-heading{
+    
+    .tools {
+        position: absolute;
+        right: 15px;
+        top: 17px;
+        
+        >.btn-link{
+            color: rgba(0,0,0,.4);
+            font-size: 13px;
+            margin-left: 15px;
+        }
+        
+        >.btn-link:focus,
+        >.btn-link:active,
+        >.btn-link:hover{
+            color: rgba(0,0,0,.7);
+            text-decoration: none;
+        }
+        
+        .panel-collapse {border:none;}
+        
+        .panel-collapse:before {
+            content: "\e648";
+            display: inline;
+            font-family: 'themify';
+            height: auto;
+            text-shadow: none;
+            font-size: 12px;
+        }
+        
+        .panel-expand:before {
+            content: "\e64b";
+            display: inline;
+            font-family: 'themify';
+            height: auto;
+            text-shadow: none;
+            font-size: 12px;
+        }
+        
+    }
+    
+}
+
+.panel.panel-primary .tools>.btn-link,
+.panel.panel-success .tools>.btn-link,
+.panel.panel-info .tools>.btn-link,
+.panel.panel-warning .tools>.btn-link,
+.panel.panel-danger .tools>.btn-link,
+.panel.panel-inverse .tools>.btn-link{
+    color: rgba(255,255,255,.6);
+}
+
+.panel.panel-primary .tools>.btn-link:hover,
+.panel.panel-success .tools>.btn-link:hover,
+.panel.panel-info .tools>.btn-link:hover,
+.panel.panel-warning .tools>.btn-link:hover,
+.panel.panel-danger .tools>.btn-link:hover,
+.panel.panel-inverse .tools>.btn-link:hover{
+    color: rgba(255,255,255,1);
+}
+
+.panel-full-screen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    
+}
+
+
+

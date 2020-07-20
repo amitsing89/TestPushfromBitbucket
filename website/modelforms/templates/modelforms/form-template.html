@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headers</title>
+    {% for field in form %}
+    <div class="form-group">
+        <div >
+            <span class="text-danger la">{{ field.errors }}</span>
+        </div>
+        <label  >{{ field.label_tag }}</label>
+        <div class="col-sm-10">{{ field }}</div>
+    </div>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>

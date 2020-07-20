@@ -1,0 +1,214 @@
+
+
+
+@import "_constructor.scss";
+
+
+
+
+/*------------------------------------------------------------------------------
+
+FORM STYLES                                                                   */
+
+
+.form-control{
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+    transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+    border-color: #DEE2E5;
+}
+
+.form-control:focus{
+    border-color: $color-primary-dft;
+    outline: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+table .form-group{ margin-bottom: 0px; }
+
+.has-success .checkbox, .has-success .checkbox-inline, .has-success .control-label, 
+.has-success .help-block, .has-success .radio, .has-success .radio-inline, 
+.has-success.checkbox label, .has-success.checkbox-inline label, .has-success.radio label, 
+.has-success.radio-inline label {
+    color: $color-success-dft;
+}
+
+
+.has-success{
+    
+    .form-control {
+        border-color: $color-success-dft;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        border-color: $color-success-drk;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control-feedback {
+        color: $color-success-dft;
+    }
+
+    .input-group-addon {
+        color: $color-success-drk;
+        background-color: $color-success-xlt;
+        border-color: $color-success-dft;
+    }
+
+}
+
+
+
+.has-warning .checkbox, .has-warning .checkbox-inline, .has-warning .control-label, 
+.has-warning .help-block, .has-warning .radio, .has-warning .radio-inline, 
+.has-warning.checkbox label, .has-warning.checkbox-inline label, .has-warning.radio label, 
+.has-warning.radio-inline label {
+    color: $color-warning-dft;
+}
+
+.has-warning {
+
+    .form-control {
+        border-color: $color-warning-dft;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        border-color: $color-warning-drk;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control-feedback {
+        color: $color-warning-dft;
+    }
+
+    .input-group-addon {
+        color: $color-warning-drk;
+        background-color: $color-warning-xlt;
+        border-color: $color-warning-dft;
+    }
+
+}
+
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, 
+.has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, 
+.has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: $color-danger-dft;
+}
+
+.has-error {
+
+    .form-control {
+        border-color: $color-danger-dft;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        border-color: $color-danger-drk;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .form-control-feedback {
+        color: $color-danger-dft;
+    }
+
+    .input-group-addon {
+        color: $color-danger-drk;
+        background-color: $color-danger-xlt;
+        border-color: $color-danger-dft;
+    }
+
+}
+
+
+
+
+.has-feedback label~.form-control-feedback {
+    line-height: 36px;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+
+INPUT GROUPS STYLES                                                           */
+
+.input-group-addon {
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.input-group-lg>.form-control, 
+.input-group-lg>.input-group-addon, 
+.input-group-lg>.input-group-btn>.btn {
+    border-radius: 3px;
+}
+
+.input-group .form-control:first-child, 
+.input-group-addon:first-child, 
+.input-group-btn:first-child>.btn, 
+.input-group-btn:first-child>.btn-group>.btn, 
+.input-group-btn:first-child>.dropdown-toggle, 
+.input-group-btn:last-child>.btn-group:not(:last-child)>.btn, 
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+
+MODREN INPUT STYLES                                                           */
+
+.form-group.modren{
+    position: relative;
+    
+    label{
+        position: absolute;
+        font-weight: 400;
+        top: 7px;
+        left: 12px;
+        font-size: 85%;
+        -webkit-transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+        transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+    }
+    
+    .form-control{
+        border-radius: 2px;
+        height: 50px;
+        padding-top: 24px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+        transition: all 0.4s cubic-bezier(0.05,0.74,0.27,0.99);
+        border-color: #DEE2E5;
+        line-height: 3;
+    }
+    
+    .form-control:focus {
+        border-color: $color-primary-dft;
+    }
+    
+}
+

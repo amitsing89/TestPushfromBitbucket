@@ -1,0 +1,9 @@
+//taas flume configuration
+ln -s \
+/home/cloudera/Desktop/flumetest-1.0-SNAPSHOT.jar /etc/flume-ng/plugins.d/flume-interceptor/lib/
+
+
+flume-ng agent --conf /etc/flume-ng/conf \
+--conf-file /etc/flume-ng/conf/flume-taas-tokenize.conf \
+--name Agent -Dflume.root.logger=INFO,console \
+--plugins-path /etc/flume-ng/plugins.d/

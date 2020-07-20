@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="spark-streaming-kafka-0-8-assembly_2.11-2.3.2">
+    <ANNOTATIONS>
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master.zip!/" />
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" />
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/examples/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" />
+      <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/python" recursive="false" type="SOURCES" />
+  </library>
+</component>

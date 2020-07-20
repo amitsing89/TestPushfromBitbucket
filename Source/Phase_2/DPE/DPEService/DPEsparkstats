@@ -1,0 +1,14 @@
+Spark stats-
+
+for 1,000 lines from a file with a batch size of 10 -- time taken to process data is 32 seconds
+
+
+for 10,000 lines from a file with different batch sizes--
+with a batch size of 100 -- time taken to process is 4.7 minute with (3 partition) (100 events)
+
+with a batch size of 10 -- time taken to process is 5.2 minute with (3 partition) (1000 events)
+
+with a batch size of 1000 -- time taken to process is 5.4 minute with (3 partition) (10 events)
+
+
+for 26133 lines with a batch size of 10 -- time taken to process the data is 20 min

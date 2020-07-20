@@ -1,0 +1,5 @@
+com\bt\taas\http\processor\HttpProcessor.class
+com\bt\taas\util\Constant.class
+com\bt\taas\flume\interceptor\FlumeInterceptor$Builder.class
+com\bt\taas\flume\interceptor\FlumeInterceptor.class
+com\bt\taas\http\processor\HttpProperties.class

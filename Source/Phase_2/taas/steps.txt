@@ -1,0 +1,21 @@
+- set up a call with follow up with Rhys and Gareth and Huw
+policies- column name, data type, size, file, 
+
+have a high level plan to share in the call for deadlines of covering all FP (<1 months)
+
+will need one more for Non FP 
+- testing unit , performance
+
+take help from Prashanth to come up with the plan , ppt(slide) which shows the percentage of work done.
+next steps, (days)
+
+agenda of the call-
+
+Share the plan which Prashanth will provide- The plan will include the current status, progress and next steps
+Dealines for FP
+
+Take his inputs and feedback.
+
+Set up a demo to show the completed features
+includes all data formats, techniques, data vault
+

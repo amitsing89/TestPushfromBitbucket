@@ -1,0 +1,495 @@
+
+
+
+
+/*------------------------------------------------------------------------------
+
+BOOTSTRAP BUTTONS STYLES                                                      */
+
+.btn{
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+
+.btn-primary {
+    background-color: $color-primary-dft;
+    border-color: $color-primary-dft;
+}
+
+.btn-primary.active, 
+.btn-primary:active, 
+.open>.dropdown-toggle.btn-primary,
+.btn-primary:hover {
+    background-color: $color-primary-drk;
+    border-color: $color-primary-drk;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, 
+.btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover {
+    background-color: $color-primary-drk;
+    border-color: $color-primary-drk;
+}
+
+
+
+.btn-secondary {
+    color: #FFFFFF;
+    background-color: $color-secondary-dft;
+    border-color: $color-secondary-dft;
+}
+
+.btn-secondary.active, 
+.btn-secondary:active, 
+.open>.dropdown-toggle.btn-secondary,
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: $color-secondary-drk;
+    border-color: $color-secondary-drk;
+}
+
+.btn-secondary.active.focus, .btn-secondary.active:focus, .btn-secondary.active:hover, 
+.btn-secondary:active.focus, .btn-secondary:active:focus, .btn-secondary:active:hover, 
+.open>.dropdown-toggle.btn-secondary.focus, .open>.dropdown-toggle.btn-secondary:focus, 
+.open>.dropdown-toggle.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: $color-secondary-drk;
+    border-color: $color-secondary-drk;
+}
+
+
+
+.btn-success {
+    background-color: $color-success-dft;
+    border-color: $color-success-dft;
+}
+
+.btn-success.active, 
+.btn-success:active, 
+.open>.dropdown-toggle.btn-success,
+.btn-success:hover {
+    color: #FFFFFF;
+    background-color: $color-success-drk;
+    border-color: $color-success-drk;
+}
+
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, 
+.btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, 
+.open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, 
+.open>.dropdown-toggle.btn-success:hover {
+    color: #FFFFFF;
+    background-color: $color-success-drk;
+    border-color: $color-success-drk;
+}
+
+
+
+.btn-info {
+    background-color: $color-info-dft;
+    border-color: $color-info-dft;
+}
+
+.btn-info.active, 
+.btn-info:active, 
+.open>.dropdown-toggle.btn-info,
+.btn-info:hover {
+    color: #FFFFFF;
+    background-color: $color-info-drk;
+    border-color: $color-info-drk;
+}
+
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, 
+.btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover, 
+.open>.dropdown-toggle.btn-info.focus, .open>.dropdown-toggle.btn-info:focus, 
+.open>.dropdown-toggle.btn-info:hover {
+    color: #FFFFFF;
+    background-color: $color-info-drk;
+    border-color: $color-info-drk;
+}
+
+
+
+.btn-warning {
+    background-color: $color-warning-dft;
+    border-color: $color-warning-dft;
+}
+
+.btn-warning.active, 
+.btn-warning:active, 
+.open>.dropdown-toggle.btn-warning,
+.btn-warning:hover {
+    color: #FFFFFF;
+    background-color: $color-warning-drk;
+    border-color: $color-warning-drk;
+}
+
+.btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, 
+.btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, 
+.open>.dropdown-toggle.btn-warning.focus, .open>.dropdown-toggle.btn-warning:focus, 
+.open>.dropdown-toggle.btn-warning:hover {
+    color: #FFFFFF;
+    background-color: $color-warning-drk;
+    border-color: $color-warning-drk;
+}
+
+
+
+.btn-danger {
+    background-color: $color-danger-dft;
+    border-color: $color-danger-dft;
+}
+
+.btn-danger.active, 
+.btn-danger:active, 
+.open>.dropdown-toggle.btn-danger,
+.btn-danger:hover {
+    color: #FFFFFF;
+    background-color: $color-danger-drk;
+    border-color: $color-danger-drk;
+}
+
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, 
+.btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, 
+.open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, 
+.open>.dropdown-toggle.btn-danger:hover {
+    color: #FFFFFF;
+    background-color: $color-danger-drk;
+    border-color: $color-danger-drk;
+}
+
+
+
+.btn-inverse {
+    color: #FFFFFF;
+    background-color: $color-inverse-dft;
+    border-color: $color-inverse-dft;
+}
+
+.btn-inverse.active, 
+.btn-inverse:active, 
+.open>.dropdown-toggle.btn-inverse,
+.btn-inverse:hover {
+    color: #FFFFFF;
+    background-color: $color-inverse-drk;
+    border-color: $color-inverse-drk;
+}
+
+.btn-inverse.active.focus, .btn-inverse.active:focus, .btn-inverse.active:hover, 
+.btn-inverse:active.focus, .btn-inverse:active:focus, .btn-inverse:active:hover, 
+.open>.dropdown-toggle.btn-inverse.focus, .open>.dropdown-toggle.btn-inverse:focus, 
+.open>.dropdown-toggle.btn-inverse:hover {
+    color: #FFFFFF;
+    background-color: $color-inverse-drk;
+    border-color: $color-inverse-drk;
+}
+
+
+
+.btn-orange {
+    color: #FFFFFF;
+    background-color: $color-orange-dft;
+    border-color: $color-orange-dft;
+}
+
+.btn-orange.active, 
+.btn-orange:active, 
+.open>.dropdown-toggle.btn-orange,
+.btn-orange:hover {
+    color: #FFFFFF;
+    background-color: $color-orange-drk;
+    border-color: $color-orange-drk;
+}
+
+.btn-orange.active.focus, .btn-orange.active:focus, .btn-orange.active:hover, 
+.btn-orange:active.focus, .btn-orange:active:focus, .btn-orange:active:hover, 
+.open>.dropdown-toggle.btn-orange.focus, .open>.dropdown-toggle.btn-orange:focus, 
+.open>.dropdown-toggle.btn-orange:hover {
+    color: #FFFFFF;
+    background-color: $color-orange-drk;
+    border-color: $color-orange-drk;
+}
+
+
+
+.btn-violet {
+    color: #FFFFFF;
+    background-color: $color-violet-dft;
+    border-color: $color-violet-dft;
+}
+
+.btn-violet.active, 
+.btn-violet:active, 
+.open>.dropdown-toggle.btn-violet,
+.btn-violet:hover {
+    color: #FFFFFF;
+    background-color: $color-violet-drk;
+    border-color: $color-violet-drk;
+}
+
+.btn-violet.active.focus, .btn-violet.active:focus, .btn-violet.active:hover, 
+.btn-violet:active.focus, .btn-violet:active:focus, .btn-violet:active:hover, 
+.open>.dropdown-toggle.btn-violet.focus, .open>.dropdown-toggle.btn-violet:focus, 
+.open>.dropdown-toggle.btn-violet:hover {
+    color: #FFFFFF;
+    background-color: $color-violet-drk;
+    border-color: $color-violet-drk;
+}
+
+
+.btn-lgrey {
+    color: #FFFFFF;
+    background-color: $color-lgrey-dft;
+    border-color: $color-lgrey-dft;
+}
+
+.btn-lgrey.active, 
+.btn-lgrey:active, 
+.open>.dropdown-toggle.btn-lgrey,
+.btn-lgrey:hover {
+    color: #FFFFFF;
+    background-color: $color-lgrey-drk;
+    border-color: $color-lgrey-drk;
+}
+
+.btn-lgrey.active.focus, .btn-lgrey.active:focus, .btn-lgrey.active:hover, 
+.btn-lgrey:active.focus, .btn-lgrey:active:focus, .btn-lgrey:active:hover, 
+.open>.dropdown-toggle.btn-lgrey.focus, .open>.dropdown-toggle.btn-lgrey:focus, 
+.open>.dropdown-toggle.btn-lgrey:hover {
+    color: #FFFFFF;
+    background-color: $color-lgrey-drk;
+    border-color: $color-lgrey-drk;
+}
+
+
+
+.btn-dgrey {
+    color: #FFFFFF;
+    background-color: $color-dgrey-dft;
+    border-color: $color-dgrey-dft;
+}
+
+.btn-dgrey .active, 
+.btn-dgrey :active, 
+.open>.dropdown-toggle.btn-dgrey ,
+.btn-dgrey :hover {
+    color: #FFFFFF !important;
+    background-color: $color-dgrey-drk;
+    border-color: $color-dgrey-drk;
+}
+
+.btn-dgrey .active.focus, .btn-dgrey .active:focus, .btn-dgrey .active:hover, 
+.btn-dgrey :active.focus, .btn-dgrey :active:focus, .btn-dgrey :active:hover, 
+.open>.dropdown-toggle.btn-dgrey .focus, .open>.dropdown-toggle.btn-dgrey :focus, 
+.open>.dropdown-toggle.btn-dgrey :hover {
+    color: #FFFFFF !important;
+    background-color: $color-dgrey-drk;
+    border-color: $color-dgrey-drk;
+}
+
+
+
+
+.btn-outline-default {
+    color: #FFFFFF;
+    background-image: none;
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.btn-outline-default:hover {
+    color: $color-primary-dft;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+.btn-outline-primary {
+    color: $color-primary-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-primary-dft;
+}
+
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+    background-color: $color-primary-dft;
+    border-color: $color-primary-dft;
+}
+
+
+
+.btn-outline-secondary {
+    color: $color-secondary-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-secondary-dft;
+}
+
+.btn-outline-secondary:hover {
+    color: #FFFFFF;
+    background-color: $color-secondary-dft;
+    border-color: $color-secondary-dft;
+}
+
+
+
+.btn-outline-success {
+    color: $color-success-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-success-dft;
+}
+
+.btn-outline-success:hover {
+    color: #FFFFFF;
+    background-color: $color-success-dft;
+    border-color: $color-success-dft;
+}
+
+
+
+.btn-outline-info {
+    color: $color-info-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-info-dft;
+}
+
+.btn-outline-info:hover {
+    color: #FFFFFF;
+    background-color: $color-info-dft;
+    border-color: $color-info-dft;
+}
+
+
+
+.btn-outline-warning {
+    color: $color-warning-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-warning-dft;
+}
+
+.btn-outline-warning:hover {
+    color: #FFFFFF;
+    background-color: $color-warning-dft;
+    border-color: $color-warning-dft;
+}
+
+
+
+.btn-outline-danger {
+    color: $color-danger-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-danger-dft;
+}
+
+.btn-outline-danger:hover {
+    color: #FFFFFF;
+    background-color: $color-danger-dft;
+    border-color: $color-danger-dft;
+}
+
+
+
+.btn-outline-inverse {
+    color: $color-inverse-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-inverse-dft;
+}
+
+.btn-outline-inverse:hover {
+    color: #FFFFFF;
+    background-color: $color-inverse-dft;
+    border-color: $color-inverse-dft;
+}
+
+
+
+.btn-outline-orange {
+    color: $color-orange-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-orange-dft;
+}
+
+.btn-outline-orange:hover {
+    color: #FFFFFF;
+    background-color: $color-orange-dft;
+    border-color: $color-orange-dft;
+}
+
+
+
+.btn-outline-violet {
+    color: $color-violet-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-violet-dft;
+}
+
+.btn-outline-violet:hover {
+    color: #FFFFFF;
+    background-color: $color-violet-dft;
+    border-color: $color-violet-dft;
+}
+
+
+
+.btn-outline-lgrey {
+    color: $color-lgrey-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-lgrey-dft;
+}
+
+.btn-outline-lgrey:hover {
+    color: #FFFFFF;
+    background-color: $color-lgrey-dft;
+    border-color: $color-lgrey-dft;
+}
+
+
+
+.btn-outline-dgrey {
+    color: $color-dgrey-dft;
+    background-image: none;
+    background-color: transparent;
+    border-color: $color-dgrey-dft;
+}
+
+.btn-outline-dgrey:hover {
+    color: #FFFFFF;
+    background-color: $color-dgrey-dft;
+    border-color: $color-dgrey-dft;
+}
+
+
+
+
+.btn-link {
+    font-weight: 500;
+    color: $color-primary-dft;
+}
+
+.btn-rounded{ border-radius: 30px !important; }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+
+BOOTSTRAP BUTTON GROUPS STYLES                                                */
+
+
+
+
+
+/*------------------------------------------------------------------------------
+
+BOOTSTRAP BUTTON DROPDOWNS STYLES                                             */

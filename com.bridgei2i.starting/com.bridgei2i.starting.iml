@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master/bin" />
+    <content url="jar://$USER_HOME$/Downloads/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar!/" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="spark-streaming-kafka-0-8-assembly_2.11-2.3.2" level="project" />
+    <orderEntry type="module-library" exported="" scope="RUNTIME">
+      <library>
+        <ANNOTATIONS>
+          <root url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" />
+        </ANNOTATIONS>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" />
+        </JAVADOC>
+        <NATIVE>
+          <root url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Downloads/hadoop-common-2.2.0-bin-master/hadoop-common-2.2.0-bin-master" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Downloads/spark-2.3.2-bin-hadoop2.7/jars" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

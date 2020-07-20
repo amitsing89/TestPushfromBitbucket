@@ -1,0 +1,14 @@
+advdashboarddailyv2
+advcontentdailyv2
+advgeodetaildailyv2
+advgeodailyv2
+advlineitemsectiondailyv2
+advsectiondailyv2
+advsitewisegeodailyv2
+pubdashboarddailyv2
+pubadslotdailyv2
+pubgeodailyv2
+pubsitewisegeodailyv2
+pubsitewisegeodetaildailyv2
+pubadslotgeoestdailyv2
+pubsitewisegeoestdailyv2
