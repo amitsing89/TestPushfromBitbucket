@@ -5,7 +5,7 @@ from cassandra import ConsistencyLevel
 import datetime
 import sys
 
-qccluster = Cluster(contact_points=['localhost'], protocol_version=3)
+qccluster = Cluster(contact_points=['192.168.34.234'], protocol_version=3)
 session = qccluster.connect()
 session.set_keyspace('adlog')
 session.execute('USE adlog')
@@ -17,13 +17,7 @@ def insertiontoAdtracker201605():
             strs = "select * from adtracker where year = 2016 and month = 05 and day = {0} and hour = {1}".format(day,
                                                                                                                   hour)
             rows = servercredentials.cassandraProdadlog(strs)
-            insertquery = "insert into adtracker{0}{1} (datehourmin,clientid,userid,createtime,adid,adlogtype," \
-                          "adunitid,advertiserappname,advertiserpkgname,androidadvertisingid,androidadvertisingidmd5," \
-                          "androidid,campaignname,clickid,cookiemap,countrycode,createdby,earlyattribution,eventname," \
-                          "geographyid,geoid,goalid,goaltime,group,impressionid,iosadvertisingid,iosadvertisingidmd5," \
-                          "ipaddress,isattributed,itemid,jsts,lineitemid,network,platformid,ptime,reqmap,source," \
-                          "sourceappname,sourcepkgname,v,vendor) values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s," \
-                          "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) "
+            insertquery = "insert into adtracker{0}{1} (datehourmin,clientid,userid,createtime,adid,adlogtype,adunitid,advertiserappname,advertiserpkgname,androidadvertisingid,androidadvertisingidmd5,androidid,campaignname,clickid,cookiemap,countrycode,createdby,earlyattribution,eventname,geographyid,geoid,goalid,goaltime,group,impressionid,iosadvertisingid,iosadvertisingidmd5,ipaddress,isattributed,itemid,jsts,lineitemid,network,platformid,ptime,reqmap,source,sourceappname,sourcepkgname,v,vendor) values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
             for a in rows:
                 millis = a.createtime / 1000.0
                 dayvar = datetime.datetime.fromtimestamp(millis).strftime('%Y-%m-%d %H:%M:%S')
@@ -46,7 +40,7 @@ def insertiontoAdtracker201605():
                 rowscheck = servercredentials.cassandraProdadlog(queryCheck)
                 # print (rowscheck)
                 if not rowscheck:
-                    print("Insertion Executed")
+                    print "Insertion Executed"
                     # print insertionquery
                     session.execute(insertionquery,
                                     [int(datehourmin), a.clientid, a.userid, a.createtime, a.adid, a.adlogtype,
@@ -58,7 +52,7 @@ def insertiontoAdtracker201605():
                                      a.network, a.platformid, a.ptime, a.reqmap, a.source, a.sourceappname,
                                      a.sourcepkgname, a.v, a.vendor])
                 else:
-                    print("ROW ALREADY FOUND")
+                    print "ROW ALREADY FOUND"
 
 
 insertiontoAdtracker201605()

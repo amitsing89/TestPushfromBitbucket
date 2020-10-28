@@ -1,6 +1,6 @@
 import redis
 import sys
-red  = redis.Redis(host = 'localhost', db = 0)
+red  = redis.Redis(host = '192.168.38.157', db = 0)
 ikey = red.keys("I:*")
 valgakey = red.keys("GA:*")
 setofigakey = []

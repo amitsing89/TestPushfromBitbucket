@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
 DAY=$(date -d "$D" '+%d')
 MONTH=$(date -d "$D" '+%m')
 YEAR=$(date -d "$D" '+%Y')
-#python /opt/amit_scripts_python/conversionData.py $YEAR $MONTH $DAY
-echo $YEAR $MONTH $DAY
+python /opt/amit_scripts_python/conversionData.py $YEAR $MONTH $DAY

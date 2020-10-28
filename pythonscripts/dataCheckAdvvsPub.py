@@ -3,16 +3,16 @@ from cassandra.cluster import Cluster
 from cassandra.query import SimpleStatement
 from cassandra import ConsistencyLevel
 
-cluster = Cluster(contact_points=['localhost', 'localhost1', 'localhost2', 'localhost3'],
+cluster = Cluster(contact_points=['192.168.34.234', '192.168.34.231', '192.168.34.232', '192.168.34.233'],
                   protocol_version=3)
 session = cluster.connect()
 session.set_keyspace('wls')
 session.execute('USE wls')
-qccluster = Cluster(contact_points=['localhost', 'localhost1', 'localhost2', 'localhost3'], protocol_version=3)
+qccluster = Cluster(contact_points=['192.169.33.131', '192.169.33.132', '192.169.33.133'], protocol_version=3)
 session2 = qccluster.connect()
 session2.set_keyspace('wls')
 session2.execute('USE wls')
-red = redis.Redis(host='localhost', db=0)
+red = redis.Redis(host='192.168.34.235', db=0)
 key = red.keys("CLNTS:*")
 advclientids = []
 for i in key:
@@ -38,8 +38,8 @@ for k in pubclientids:
         spendcount = spendcount + user_row.spend
         clickcount = clickcount + user_row.click
         imprcount = imprcount + user_row.impr
-    # print k,imprcount,clickcount,spendcount
-    # print k,imprcount,clickcount,spendcount
+        # print k,imprcount,clickcount,spendcount
+        # print k,imprcount,clickcount,spendcount
     totalclicks = totalclicks + clickcount
 
 print totalclicks
@@ -57,7 +57,7 @@ for j in range(1, 31):
             imprcount = imprcount + user_row.impr
             clickcount = clickcount + user_row.click
             spendcount = spendcount + user_row.spend
-        # print k,imprcount,clickcount,spendcount
+            # print k,imprcount,clickcount,spendcount
         stsradvcontentdailyv2 = "SELECT * FROM advcontentdailyv2 WHERE clientid={0} and date IN ('2015-09-0{1} 00:00:00+0530') ".format(
             k, j)
         insertQuerycontentdailyv2 = "insert into advsectiondailyv2 (clientid,date,lineitemid,itemid,click,impr,spend) values(%s,%s,%s,%s,%s,%s,%s)"
